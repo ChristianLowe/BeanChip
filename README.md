@@ -5,7 +5,7 @@
 A Java Chip8 emulator. Comes with freeware games.
 
 To run, clone the repo onto your computer and execute: 
-`compile exec:java -Dexec.mainClass=com.grognak.Main`
+`mvn compile exec:java -Dexec.mainClass=com.grognak.Main`
 (Try typing in "invaders"!)
 
 ### Keypad Mapping:
