@@ -3,18 +3,18 @@ package com.grognak;
 /**
  * Created by Chris on 11/28/2016.
  */
-public class FlowStack {
-    public static final int MAX_STACK_SIZE = 16;
+class FlowStack {
+    private static final int MAX_STACK_SIZE = 16;
 
-    private short stack[];
-    private short pointer;
+    private int stack[];
+    private int pointer;
 
-    public FlowStack() {
-        stack = new short[MAX_STACK_SIZE];
+    FlowStack() {
+        stack = new int[MAX_STACK_SIZE];
         pointer = 0;
     }
 
-    public void push(short programCounter) {
+    void push(int programCounter) {
         try {
             stack[pointer] = programCounter;
             pointer++;
@@ -23,7 +23,7 @@ public class FlowStack {
         }
     }
 
-    public short pop() {
+    int pop() {
         try {
             pointer--;
             return stack[pointer];
