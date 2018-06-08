@@ -5,10 +5,10 @@
 A Java Chip8 emulator. Comes with freeware games.
 
 To run, clone the repo onto your computer and execute: 
-`compile exec:java -Djava.library.path=target/natives -Dexec.mainClass=com.grognak.Main`
+`compile exec:java -Dexec.mainClass=com.grognak.Main`
 (Try typing in "invaders"!)
 
-###Keypad Mapping:
+### Keypad Mapping:
 ```
    Keypad                   Keyboard
    +-+-+-+-+                +-+-+-+-+
@@ -22,6 +22,6 @@ To run, clone the repo onto your computer and execute:
    +-+-+-+-+                +-+-+-+-+
 ```
 
-###References:
+### References:
 * http://www.multigesture.net/articles/how-to-write-an-emulator-chip-8-interpreter/
 * http://mattmik.com/files/chip8/mastering/chip8.html
